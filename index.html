@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuñez Taco Bar &amp; Catering – Authentic Mexican Food &amp; Order Online</title>
+    <meta name="description" content="Welcome to Nuñez Taco Bar &amp; Catering in Simi Valley, CA. Enjoy authentic Mexican food, fresh tacos, and drinks made with passion and love. Order online now!">
+    <link rel="canonical" href="https://nuneztacobar.com/">
+    <link rel="icon" id="favicon" type="image/png" href="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,dpr_auto,w_250/v1789411774/NunezTacoBarLOGO_gm23q4.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Base Styles */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-deep: #000000;
+            --bg-card: #121212;
+            --bg-surface: #1a1a1a;
+            --green-mexican: #388E3C;
+            --green-hover: #2E7D32;
+            --white: #FFFFFF;
+            --orange-vibrant: #E65100;
+            --yellow-gold: #FBC02D;
+            --terracota: #8D6E63;
+            --crystal-blue: #E0F7FA;
+            --text-main: #F5F5F5;
+            --text-muted: #B0BEC5;
+            --font-urban: 'Outfit', sans-serif;
+            --font-body: 'Manrope', sans-serif;
+            --font-artisan: 'Playfair Display', serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--text-main);
+            background-color: var(--bg-deep);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 18px 0;
+            border-bottom: 1px solid rgba(56, 142, 60, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-family: var(--font-urban);
+            font-size: 24px;
+            font-weight: 900;
+            color: var(--white);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .navbar-brand span {
+            color: var(--green-mexican);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+            align-items: center;
+        }
+
+        .nav-link {
+            font-family: var(--font-urban);
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--text-main);
+            letter-spacing: 1.5px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--yellow-gold);
+        }
+
+        .lang-switcher {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-left: 15px;
+            border-left: 1px solid rgba(255,255,255,0.2);
+            padding-left: 20px;
+        }
+
+        .lang-btn {
+            cursor: pointer;
+            font-family: var(--font-urban);
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            background: none;
+            border: none;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-toggler {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .toggler-icon {
+            width: 28px;
+            height: 3px;
+            background-color: var(--white);
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 90vh;
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_1600/v1777151404/yiebnrm6l10wizbcdbp2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.85) 100%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            color: var(--white);
+            padding: 0 20px;
+            max-width: 900px;
+            margin-top: 40px;
+        }
+
+        .hero-logo-container {
+            margin-bottom: 25px;
+        }
+
+        .hero-logo {
+            max-height: 140px;
+            width: auto;
+            display: block;
+            margin: 0 auto;
+            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.6));
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-artisan);
+            font-size: 22px;
+            font-style: italic;
+            color: var(--yellow-gold);
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-location-text {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--crystal-blue);
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+
+        .btn-custom-order {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 36px;
+            background-color: var(--green-mexican);
+            color: var(--white);
+            font-family: var(--font-urban);
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-radius: 50px;
+            border: 2px solid var(--green-mexican);
+            box-shadow: 0 6px 20px rgba(56, 142, 60, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom-order:hover {
+            background-color: var(--green-hover);
+            border-color: var(--green-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(56, 142, 60, 0.6);
+        }
+
+        .hero-address {
+            font-size: 15px;
+            font-weight: 400;
+            color: var(--text-muted);
+            margin-top: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Section Layouts & Typography */
+        .section-title {
+            font-family: var(--font-artisan);
+            font-size: 42px;
+            font-style: italic;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 12px;
+        }
+
+        .section-title.centered {
+            text-align: center;
+        }
+
+        .section-subtitle-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 35px;
+        }
+
+        .section-subtitle-container.centered {
+            justify-content: center;
+        }
+
+        .line-small {
+            width: 40px;
+            height: 3px;
+            background-color: var(--orange-vibrant);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            font-family: var(--font-urban);
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--yellow-gold);
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 110px 0;
+            background-color: var(--bg-card);
+            position: relative;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            line-height: 1.9;
+            font-size: 17px;
+        }
+
+        .about-images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: transform 0.4s ease;
+        }
+
+        .about-image:hover {
+            transform: scale(1.03);
+        }
+
+        .about-image:nth-child(2) {
+            margin-top: 30px;
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            padding: 110px 0;
+            background-color: var(--bg-deep);
+        }
+
+        #gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 50px;
+        }
+
+        .gallery-img-wrapper {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            aspect-ratio: 1 / 1;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .gallery-img-wrapper:hover .gallery-img {
+            transform: scale(1.08);
+        }
+
+        /* Catering Section */
+        .catering-section {
+            position: relative;
+            padding: 130px 0;
+            background-image: url('https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_1600/v1789412017/706017419_122167292738712221_4169849083114912287_n_mzsx1b.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .catering-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.82);
+        }
+
+        .catering-section .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .catering-box {
+            background: var(--bg-surface);
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 60px 70px;
+            text-align: center;
+            border-radius: 16px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.7);
+            border: 1px solid rgba(251, 192, 45, 0.2);
+        }
+
+        .catering-text {
+            color: var(--text-muted);
+            line-height: 1.9;
+            margin-bottom: 25px;
+            font-size: 17px;
+        }
+
+        .catering-text:last-of-type {
+            font-weight: 600;
+            color: var(--crystal-blue);
+        }
+
+        /* Info Section */
+        .info-section {
+            padding: 110px 0;
+            background-color: var(--bg-card);
+        }
+
+        .info-box {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--bg-surface);
+            padding: 60px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 45px;
+        }
+
+        .info-item h4 {
+            font-family: var(--font-artisan);
+            font-size: 22px;
+            font-style: italic;
+            color: var(--yellow-gold);
+            margin-bottom: 15px;
+        }
+
+        .info-item p {
+            color: var(--text-muted);
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        .site-footer {
+            background-color: #080808;
+            padding: 80px 0 40px;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer-title {
+            font-family: var(--font-artisan);
+            font-size: 22px;
+            font-style: italic;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .footer-col p {
+            font-size: 15px;
+            line-height: 1.9;
+            margin-bottom: 10px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 14px;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding-top: 30px;
+        }
+
+        .footer-bottom a {
+            color: var(--yellow-gold);
+            font-weight: 700;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero-title {
+                font-size: 48px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .about-images {
+                order: -1;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            #gallery-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar-toggler {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                background-color: var(--bg-surface);
+                padding: 30px 20px;
+                gap: 20px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+                transform: translateY(-120%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.4s ease;
+                border-bottom: 1px solid rgba(56, 142, 60, 0.2);
+            }
+
+            .nav-menu.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .lang-switcher {
+                border-left: none;
+                border-top: 1px solid rgba(255,255,255,0.1);
+                padding-left: 0;
+                padding-top: 15px;
+                margin-left: 0;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .catering-box {
+                padding: 40px 25px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .footer-col {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #gallery-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-title {
+                font-size: 32px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn-custom-order {
+                width: 100%;
+                max-width: 280px;
+                text-align: center;
+            }
+
+            .about-images {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image {
+                height: 250px;
+            }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-deep);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--green-mexican);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--green-hover);
+        }
+    </style>
+<script>window.MENU_TECH_STATE = {"lang":"en","showReservations":false,"showAbout":true,"showPromo":false,"showGallery":true,"showCatering":true,"showInfo":true,"showDelivery":false,"cuid":"00000","ruid":"00000","title":"Nuñez Taco Bar & Catering","logoImg":"https://res.cloudinary.com/dzklt0a5u/image/upload/v1789411774/NunezTacoBarLOGO_gm23q4.png","heroAddress":"2505 Royal Ave, Simi Valley, CA 93065","heroImg":"https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412099/Gemini_Generated_Image_v3vjzjv3vjzjv3vj_fbc4uw.jpg","aboutImg1":"https://res.cloudinary.com/dzklt0a5u/image/upload/v1789411904/706017419_122167292738712221_4169849083114912287_n_1_x80fhr.jpg","aboutImg2":"https://res.cloudinary.com/dzklt0a5u/image/upload/v1789411906/688941632_122165947640712221_1652010976123536986_n_x55qsj.jpg","promoBg":"https://res.cloudinary.com/dzklt0a5u/image/upload/v1777151404/yiebnrm6l10wizbcdbp2.jpg","cateringBg":"https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412017/706017419_122167292738712221_4169849083114912287_n_mzsx1b.jpg","deliveryImg":"https://res.cloudinary.com/dzklt0a5u/image/upload/v1777151404/yiebnrm6l10wizbcdbp2.jpg","gallery":["https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412129/727338449_122169177362712221_439188235876591970_n_psncnq.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412130/706017419_122167292738712221_4169849083114912287_n_sgserq.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412131/705410330_122167292780712221_2356933781053670664_n_jaxlge.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412132/690672627_122166063596712221_3081923372671007935_n_pgci6b.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412133/689910313_122166063704712221_5792840967956777618_n_y1wij5.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412133/687567733_122165948720712221_6903147346197335624_n_ur4cuc.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412134/680231491_122164918028712221_2062522167895905268_n_z2sga0.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412135/676643350_122164854896712221_7463788644926992155_n_lnwig0.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412136/675421367_122164779656712221_2848174692217278402_n_ry0hol.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412137/672677248_122164199078712221_2895169718485082422_n_vvuuwb.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412137/645647392_122160548252712221_5520008895165635003_n_hudeiq.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412138/667072031_122163710174712221_6603423531302045733_n_fjrycz.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412139/617960131_122156495300712221_4753352835279764507_n_b7dohi.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412140/486970360_122120178914712221_1521998868830509928_n_fov4uc.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412140/489061339_122121715778712221_8877227597269978381_n_phd01x.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412141/476554514_122111955872712221_5388640605171502638_n_g5x3m6.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412141/475476081_122109559784712221_1304711607405473870_n_njgcsq.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412142/475143571_122109552878712221_2114810543830836787_n_xrhe6c.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412143/475250688_122109559928712221_8716892572876000014_n_hsolzl.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412143/475085053_122109559754712221_6255172491649631250_n_khngt8.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412144/474100343_122108389820712221_7206830209510777353_n_bo4kh0.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412145/473425321_122107189646712221_4682991084696149588_n_m4vzm4.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412145/472103285_122097522128712221_6582866092937272997_n_pruaba.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412146/471845736_122094952220712221_2170140539818368317_n_yknudq.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412147/471835359_122095878704712221_6370166686821367876_n_jczrbg.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412147/471701070_122095971368712221_2225416344389535339_n_teeqlx.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412148/471668072_122095879430712221_695990170049918073_n_qfts9c.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412148/471643675_122095971392712221_7026790594250708089_n_tmnzvz.jpg","https://res.cloudinary.com/dzklt0a5u/image/upload/v1789412149/471592236_122095971428712221_3785448714158442020_n_xmingk.jpg"],"contact":{"phone":"805-800-2948","address":"2505 Royal Ave, Simi Valley, CA 93065","hours":"Monday through Saturday: 11:30 AM – 9PM Sunday: Closed"},"socials":[{"platform":"instagram","url":"https://www.instagram.com/nuneztacobar/"},{"platform":"facebook","url":"https://www.facebook.com/profile.php?id=61571366634513"},{"platform":"tiktok","url":"https://www.tiktok.com/@nuneztacobar"}],"paragraphs":{"about":"FAMILY OWN BUSINESS\nFriendly and responsible and when it's about cooking we put our heart\nMexican food made with passion and love.\nContact Us for Catering\nTaco Bar pop ups!","promo":"2 Medium Pizzas\n\nSoft Drinks\n\nGarlic Bread or Patato Wedges\n\nSalad to share\n\nHope you are hungry. Buy one regular priced pizza online and get a second pizza totally free!\n\nOnline only!\n\n6 Delicious regular size pizzas to choose from: Margherita, Capricciosa, Prosciutto e Funghi, Diavola, Calzone, Primavera.","catering":"Nunez Taco Bar & Catering can cater to any party or event irrespective of how big or small. We specialize in catering with personalised service and special menus on request. In our menu palette, you'll discover unique and sophisticated tastes - all of which will help you uncover the true greatness of the mexican restaurant.","delivery":"Looking for food delivery nearby? Not everybody knows or has the time to prepare tasty food.\n\nWhen you want to get served like a king then food delivery from restaurant Pronto will be your best choice.\n\nSimply select \"Delivery\" at the checkout screen and we hope you'll appreciate our food delivery service."},"titles":{"about-title":"We are Nunez Taco Bar & Catering","about-subtitle":"About Us","promo1-title":"Best Friends Deal","promo1-subtitle":"Sharing Is Caring","promo2-title":"Buy 1 Get 1 FREE","promo2-subtitle":"This Week Only","promo3-title":"Awesome Foursome","promo3-subtitle":"Sundays Only","gallery-title":"Delicious Mexican Food","gallery-subtitle":"Love At First Bite","catering-title":"Catering","catering-subtitle":"Party Time","delivery-title":"Food Delivery in NY","delivery-subtitle":"Get Served Like a King","info-title":"Information","info-subtitle":"Visit Us"},"info":{"hours":"Monday through Saturday: 11:30 AM – 9PM\nSunday: Closed","phone":"805-800-2948","address":"2505 Royal Ave, Simi Valley, CA 93065"}};</script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="navbar-brand" id="nav-brand">Nuñez <span>Taco Bar</span></a>
+            <button class="navbar-toggler" id="navbar-toggler" aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" data-es="Inicio" data-en="Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about-section" class="nav-link" data-es="Nosotros" data-en="About">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery-section" class="nav-link" data-es="Galería" data-en="Gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#catering-section" class="nav-link" data-es="Catering" data-en="Catering">Catering</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#info-section" class="nav-link" data-es="Contacto" data-en="Contact">Contact</a>
+                </li>
+                <li class="nav-item lang-switcher">
+                    <button id="lang-es" class="lang-btn" style="font-weight: 700; color: var(--yellow-gold);">ES</button>
+                    <span style="color: rgba(255,255,255,0.3);">|</span>
+                    <button id="lang-en" class="lang-btn" style="font-weight: 400; color: var(--text-muted);">EN</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-logo-container">
+                <img src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto:eco,dpr_auto,w_250/v1789411774/NunezTacoBarLOGO_gm23q4.png" id="hero-logo" alt="Nuñez Taco Bar Logo" class="hero-logo" width="140" height="140">
+            </div>
+            <p class="hero-subtitle" data-es="Auténtico Sabor Mexicano &amp; Taco Bar" data-en="Authentic Mexican Flavor &amp; Taco Bar">Authentic Mexican Flavor &amp; Taco Bar</p>
+            <p class="hero-location-text">TEQUILAS • JALISCO • SIMI VALLEY</p>
+            <div class="hero-buttons">
+                <a href="https://nuneztacobarcatering.onlineordering.io/en?locationId=1563867&amp;orderMode=in_store_pickup" target="_blank" class="btn-custom-order" data-es="Ordenar en Línea" data-en="Order Online">Order Online</a>
+            </div>
+            <p class="hero-address" id="hero-address">1901 W Caro Rd Caro, Mi 48723 &bull; 2505 Royal Ave, Simi Valley, CA 93065</p>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title" id="about-title" data-es="Somos Nuñez Taco Bar &amp; Catering" data-en="We are Nuñez Taco Bar &amp; Catering">We are Nuñez Taco Bar &amp; Catering</h2>
+                    <span class="section-subtitle-container">
+                        <span class="line-small"></span>
+                        <span class="section-subtitle" id="about-subtitle" data-es="Sobre Nosotros" data-en="About Us">About Us</span>
+                    </span>
+                    <p id="about-p1" data-es="Negocio familiar, amigable y responsable. Cuando se trata de cocinar, ponemos todo nuestro corazón. Comida mexicana hecha con pasión y amor. ¡Contáctanos para servicios de catering y eventos de taco bar pop ups!" data-en="FAMILY OWN BUSINESS. Friendly and responsible and when it's about cooking we put our heart. Mexican food made with passion and love. Contact Us for Catering &amp; Taco Bar pop ups!">FAMILY OWN BUSINESS. Friendly and responsible and when it's about cooking we put our heart. Mexican food made with passion and love. Contact Us for Catering &amp; Taco Bar pop ups!</p>
+                    <p id="about-p2" data-es="El secreto de nuestro éxito es simple: crear platillos excepcionales utilizando ingredientes frescos y de alta calidad que capturan la verdadera esencia de la cocina mexicana en cada bocado." data-en="The secret to our success is simple: creating exceptional meals using fresh, high-quality ingredients that capture the true essence of Mexican cooking in every bite.">The secret to our success is simple: creating exceptional meals using fresh, high-quality ingredients that capture the true essence of Mexican cooking in every bite.</p>
+                    <p id="about-p3" data-es="Nuestra misión es ayudarte a saborear los momentos que realmente importan. Disfruta de buena comida, saborea una bebida refrescante y, sobre todo, relájate y siéntete como en casa. Agradecemos sinceramente tu apoyo y confianza." data-en="Our mission is to help you savor the moments that truly matter. Enjoy great food. Sip on a refreshing drink. And above all, unwind and feel at home. We sincerely appreciate your continued support and trust.">Our mission is to help you savor the moments that truly matter. Enjoy great food. Sip on a refreshing drink. And above all, unwind and feel at home. We sincerely appreciate your continued support and trust.</p>
+                </div>
+                <div class="about-images">
+                    <img id="about-img-1" src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_600/v1789411904/706017419_122167292738712221_4169849083114912287_n_1_x80fhr.jpg" alt="Nuñez Taco Bar Special Dish" class="about-image" loading="lazy" width="400" height="350">
+                    <img id="about-img-2" src="https://res.cloudinary.com/dzklt0a5u/image/upload/f_auto,q_auto,w_600/v1789411906/688941632_122165947640712221_1652010976123536986_n_x55qsj.jpg" alt="Mexican Traditional Tacos" class="about-image" loading="lazy" width="400" height="350">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delicious Mexican Food Section -->
+    <section class="gallery-section" id="gallery-section">
+        <div class="container">
+            <h2 class="section-title centered" id="gallery-title" data-es="Deliciosa Comida Mexicana" data-en="Delicious Mexican Food">Delicious Mexican Food</h2>
+            <span class="section-subtitle-container centered">
+                <span class="line-small"></span>
+                <span class="section-subtitle" id="gallery-subtitle" data-es="Amor al Primer Bocado" data-en="Love At First Bite">Love At First Bite</span>
+            </span>
+            <div id="gallery-container">
+                <!-- Dynamically populated gallery images -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Catering Section -->
+    <section class="catering-section" id="catering-section">
+        <div class="catering-overlay"></div>
+        <div class="container">
+            <div class="catering-box">
+                <h2 class="section-title centered" id="catering-title" data-es="Catering" data-en="Catering">Catering</h2>
+                <span class="section-subtitle-container centered">
+                    <span class="line-small"></span>
+                    <span class="section-subtitle" id="catering-subtitle" data-es="Hora de Celebrar" data-en="Party Time">Party Time</span>
+                </span>
+                <p id="catering-p1" class="catering-text" data-es="Nuñez Taco Bar &amp; Catering puede atender cualquier fiesta o evento sin importar cuán grande o pequeño sea. Nos especializamos en catering con servicio personalizado y menús especiales bajo petición. En nuestra paleta de menús descubrirás sabores únicos y sofisticados." data-en="Nunez Taco Bar &amp; Catering can cater to any party or event irrespective of how big or small. We specialize in catering with personalised service and special menus on request. In our menu palette, you'll discover unique and sophisticated tastes.">Nunez Taco Bar &amp; Catering can cater to any party or event irrespective of how big or small. We specialize in catering with personalised service and special menus on request. In our menu palette, you'll discover unique and sophisticated tastes.</p>
+                <p id="catering-p2" class="catering-text" data-es="Cuéntanos sobre tu evento contactándonos directamente." data-en="Tell us about your event by reaching out to us directly.">Tell us about your event by reaching out to us directly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section" id="info-section">
+        <div class="container">
+            <div class="info-box">
+                <h2 class="section-title centered" id="info-title" data-es="Información" data-en="Information">Information</h2>
+                <span class="section-subtitle-container centered">
+                    <span class="line-small"></span>
+                    <span class="section-subtitle" id="info-subtitle" data-es="Visítanos" data-en="Visit Us">Visit Us</span>
+                </span>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h4 data-es="Horarios" data-en="Opening Hours">Opening Hours</h4>
+                        <p id="info-hours">Monday through Saturday: 11:30 AM – 9PM<br>Sunday: Closed</p>
+                    </div>
+                    <div class="info-item">
+                        <h4 data-es="Teléfono" data-en="Phone">Phone</h4>
+                        <p id="info-phone">805-800-2948</p>
+                    </div>
+                    <div class="info-item">
+                        <h4 data-es="Dirección" data-en="Address">Address</h4>
+                        <p id="info-address">2505 Royal Ave, Simi Valley, CA 93065</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-title" data-es="Contáctanos" data-en="Contact Us">Contact Us</h4>
+                    <p id="footer-address">2505 Royal Ave, Simi Valley, CA 93065</p>
+                    <p id="footer-phone">Phone: 805-800-2948</p>
+                    <div id="social-icons" style="margin-top: 20px; display: flex; gap: 15px;">
+                        <!-- Social Networks dynamically added here -->
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title" data-es="Horarios" data-en="Opening Hours">Opening Hours</h4>
+                    <p id="footer-hours">Monday through Saturday: 11:30 AM – 9PM<br>Sunday: Closed</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © <span id="copyright-year-range">2015 - 2026</span> Powered by <a href="https://menutech.xyz" target="_blank">Menutech</a>. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        /* Menutech bilingual and dynamic content logic */
+        const optimizeCloudinaryUrl = (url, options = {}) => {
+            if (!url || typeof url !== 'string' || !url.includes('res.cloudinary.com')) return url;
+            const [baseUrl, hash] = url.split('#');
+            if (!baseUrl.includes('/upload/')) return url;
+            const parts = baseUrl.split('/upload/');
+
+            let pathSegments = parts[1].split('/');
+            if (pathSegments.length > 1) {
+                const firstSegment = pathSegments[0];
+                const isVersion = /^v\d+$/.test(firstSegment);
+                const isTransformation = !isVersion && (firstSegment.includes('_') || firstSegment.includes(','));
+                if (isTransformation) {
+                    pathSegments.shift();
+                }
+            }
+            const cleanPath = pathSegments.join('/');
+
+            let transformations = ['f_auto', 'q_auto:eco', 'dpr_auto'];
+            if (options.width) {
+                transformations.push(`w_${options.width}`);
+            } else {
+                transformations.push('w_400');
+            }
+            if (options.height) transformations.push(`h_${options.height}`);
+            if (options.crop) transformations.push(`c_${options.crop}`);
+            const transformationString = transformations.join(',');
+            const optimizedUrl = `${parts[0]}/upload/${transformationString}/${cleanPath}`;
+            return hash ? `${optimizedUrl}#${hash}` : optimizedUrl;
+        };
+
+        const SOCIAL_ICONS = {
+            instagram: `<svg style="width:24px;height:24px;fill:currentColor" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>`,
+            facebook: `<svg style="width:24px;height:24px;fill:currentColor" viewBox="0 0 24 24"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg>`,
+            whatsapp: `<svg style="width:24px;height:24px;fill:currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.81 9.81 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.22 8.22 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23-1.44 0-2.85-.38-4.1-1.11l-.29-.17-3.06.81.82-2.98-.19-.3a8.22 8.22 0 0 1-1.26-4.48c0-4.54 3.7-8.23 8.24-8.23m-3.85 3.09c-.21 0-.45.03-.66.24-.21.21-.81.79-.81 1.94s.84 2.25.96 2.41c.12.16 1.63 2.49 3.96 3.5.55.24 1 .38 1.34.49.56.18 1.07.15 1.48.09.45-.06 1.39-.57 1.58-1.12.2-.55.2-1.02.14-1.12-.06-.1-.21-.16-.45-.27-.24-.12-1.39-.69-1.61-.77-.22-.08-.37-.12-.53.12-.16.24-.61.77-.75.93-.14.16-.27.18-.51.06-.24-.12-.99-.36-1.89-1.16-.7-.62-1.17-1.39-1.31-1.63-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.15.16-.25.24-.42.08-.17.04-.32-.02-.45-.06-.13-.53-1.28-.73-1.75-.19-.48-.39-.41-.53-.42l-.44-.01Z"/></svg>`,
+            tiktok: `<svg style="width:24px;height:24px;fill:currentColor" viewBox="0 0 24 24"><path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 1 1-2.59-2.5c.22 0 .44.03.65.08V9.82a5.71 5.71 0 0 0-.65-.04 5.68 5.68 0 1 0 5.68 5.68V8.69a7.35 7.35 0 0 0 4.28 1.35V6.95a4.27 4.27 0 0 1-3.22-1.13z"/></svg>`
+        };
+
+        let currentLang = 'es';
+
+        function applyLanguage(lang) {
+            currentLang = lang;
+            document.querySelectorAll('[data-es]').forEach(el => {
+                const text = el.getAttribute(`data-${lang}`);
+                if (text) el.textContent = text;
+            });
+
+            const esBtn = document.getElementById('lang-es');
+            const enBtn = document.getElementById('lang-en');
+            if (!esBtn || !enBtn) return;
+
+            if (lang === 'es') {
+                esBtn.style.fontWeight = '700'; esBtn.style.color = 'var(--yellow-gold)';
+                enBtn.style.fontWeight = '400'; enBtn.style.color = 'var(--text-muted)';
+            } else {
+                enBtn.style.fontWeight = '700'; enBtn.style.color = 'var(--yellow-gold)';
+                esBtn.style.fontWeight = '400'; esBtn.style.color = 'var(--text-muted)';
+            }
+        }
+
+        function updateUI(data) {
+            if (!data) return;
+            if (data.lang) applyLanguage(data.lang);
+
+            if (data.title) {
+                const navBrand = document.getElementById('nav-brand');
+                if (navBrand) navBrand.innerHTML = `Nuñez <span>Taco Bar</span>`;
+            }
+
+            if (data.logoImg) {
+                const logo = document.getElementById('hero-logo');
+                const favicon = document.getElementById('favicon');
+                const optimizedLogo = optimizeCloudinaryUrl(data.logoImg, { width: 250 });
+                if (logo) logo.src = optimizedLogo;
+                if (favicon) favicon.href = optimizedLogo;
+            }
+
+            if (data.heroAddress !== undefined) {
+                const addr = document.getElementById('hero-address');
+                if (addr) addr.textContent = data.heroAddress;
+            }
+
+            const sections = {
+                'about-section': data.showAbout !== false,
+                'gallery-section': data.showGallery !== false,
+                'catering-section': data.showCatering !== false,
+                'info-section': data.showInfo !== false
+            };
+            Object.keys(sections).forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.style.display = sections[id] ? '' : 'none';
+            });
+
+            if (data.heroImg) {
+                const heroSection = document.getElementById('hero-section');
+                if (heroSection) heroSection.style.backgroundImage = `url('${optimizeCloudinaryUrl(data.heroImg, { width: 1600 })}')`;
+            }
+
+            if (data.aboutImg1) {
+                const img = document.getElementById('about-img-1');
+                if (img) img.src = optimizeCloudinaryUrl(data.aboutImg1, { width: 600 });
+            }
+            if (data.aboutImg2) {
+                const img = document.getElementById('about-img-2');
+                if (img) img.src = optimizeCloudinaryUrl(data.aboutImg2, { width: 600 });
+            }
+            if (data.cateringBg) {
+                const el = document.getElementById('catering-section');
+                if (el) el.style.backgroundImage = `url('${optimizeCloudinaryUrl(data.cateringBg, { width: 1600 })}')`;
+            }
+
+            if (data.info) {
+                const hoursEl = document.getElementById('info-hours');
+                const phoneEl = document.getElementById('info-phone');
+                const addressEl = document.getElementById('info-address');
+
+                if (hoursEl) hoursEl.innerHTML = (data.info.hours || '').replace(/\n/g, '<br>');
+                if (phoneEl) phoneEl.textContent = data.info.phone || '';
+                if (addressEl) addressEl.textContent = data.info.address || '';
+
+                const fHours = document.getElementById('footer-hours');
+                const fPhone = document.getElementById('footer-phone');
+                const fAddress = document.getElementById('footer-address');
+                if (fHours) fHours.innerHTML = (data.info.hours || '').replace(/\n/g, '<br>');
+                if (fPhone) fPhone.textContent = (data.info.phone ? (currentLang === 'es' ? 'Teléfono: ' : 'Phone: ') + data.info.phone : '');
+                if (fAddress) fAddress.textContent = data.info.address || '';
+            }
+
+            if (data.socials) {
+                const container = document.getElementById('social-icons');
+                if (container) {
+                    container.innerHTML = data.socials.map(s => `
+                        <a href="${s.url}" target="_blank" style="color: var(--text-muted); transition: color 0.3s;" onmouseover="this.style.color='var(--yellow-gold)'" onmouseout="this.style.color='var(--text-muted)'">
+                            ${SOCIAL_ICONS[s.platform] || ''}
+                        </a>
+                    `).join('');
+                }
+            }
+
+            if (data.gallery) {
+                const container = document.getElementById('gallery-container');
+                if (container) {
+                    container.innerHTML = data.gallery.map(img => `
+                        <div class="gallery-img-wrapper">
+                            <img src="${optimizeCloudinaryUrl(img, { width: 500, height: 500, crop: 'fill' })}" class="gallery-img" loading="lazy" width="400" height="400" alt="Nuñez Taco Bar Gallery Dish">
+                        </div>
+                    `).join('');
+                }
+            }
+
+            if (data.paragraphs) {
+                const sectionMap = {
+                    about: ['about-p1', 'about-p2', 'about-p3'],
+                    catering: ['catering-p1', 'catering-p2']
+                };
+
+                Object.keys(data.paragraphs).forEach(sectionKey => {
+                    const content = data.paragraphs[sectionKey] || "";
+                    const segments = content.split('\n\n');
+                    const elementIds = sectionMap[sectionKey];
+
+                    if (elementIds) {
+                        elementIds.forEach((id, index) => {
+                            const el = document.getElementById(id);
+                            if (el) {
+                                const segment = segments[index] || "";
+                                if (segment.trim() !== "") {
+                                    el.textContent = segment;
+                                }
+                                el.style.display = segment.trim() === "" ? "none" : "";
+                            }
+                        });
+                    }
+                });
+            }
+        }
+
+        window.addEventListener('message', (event) => {
+            if (event.data.type === 'UPDATE_CONTENT') {
+                updateUI(event.data.data);
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const yearEl = document.getElementById('copyright-year-range');
+            if (yearEl) yearEl.textContent = `2015 - ${new Date().getFullYear()}`;
+
+            if (window.MENU_TECH_STATE) {
+                updateUI(window.MENU_TECH_STATE);
+            }
+
+            const esBtn = document.getElementById('lang-es');
+            const enBtn = document.getElementById('lang-en');
+            if (esBtn) esBtn.addEventListener('click', () => applyLanguage('es'));
+            if (enBtn) enBtn.addEventListener('click', () => applyLanguage('en'));
+        });
+
+        const navbarToggler = document.getElementById('navbar-toggler');
+        const navMenu = document.getElementById('nav-menu');
+
+        navbarToggler.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icons = navbarToggler.querySelectorAll('.toggler-icon');
+            icons.forEach((icon, index) => {
+                if (navMenu.classList.contains('active')) {
+                    if (index === 0) icon.style.transform = 'rotate(45deg) translate(6px, 6px)';
+                    else if (index === 1) icon.style.opacity = '0';
+                    else if (index === 2) icon.style.transform = 'rotate(-45deg) translate(6px, -6px)';
+                } else {
+                    icon.style.transform = 'none';
+                    icon.style.opacity = '1';
+                }
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!navbarToggler.contains(e.target) && !navMenu.contains(e.target)) {
+                navMenu.classList.remove('active');
+                navbarToggler.querySelectorAll('.toggler-icon').forEach(icon => {
+                    icon.style.transform = 'none';
+                    icon.style.opacity = '1';
+                });
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                navMenu.classList.remove('active');
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
